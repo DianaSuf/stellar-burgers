@@ -1,11 +1,11 @@
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import {
   getUserApi,
   updateUserApi,
   registerUserApi,
   loginUserApi,
   logoutApi
-} from '@api';
+} from '../../utils/burger-api';
 import { setCookie, deleteCookie } from '../../utils/cookie';
 import { TUser } from '@utils-types';
 
